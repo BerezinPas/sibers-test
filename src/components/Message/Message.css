@@ -1,0 +1,18 @@
+.Message {
+  max-width: 65%;
+  padding: 4px 12px;
+  border-radius: 12px;
+  color: #011627;
+  background-color: #fff;
+  font-size: 16px;
+}
+.Message:first-child {
+  margin-top: auto;
+}
+.Message_own {
+  align-self: end;
+  background-color: #78e378;
+}
+.Message__title {
+  color: #707991;
+}

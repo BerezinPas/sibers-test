@@ -1,0 +1,110 @@
+.ChatInfo {
+  flex: 1 0 250px;
+  display: flex;
+  flex-direction: column;
+  background-color: #6f94c7;
+  width: 250px;
+  transition: 0.25s;
+  transform: translateX(100%);
+  position: absolute;
+  right: 0;
+  height: 100%;
+}
+.ChatInfo.active {
+  transform: translateX(0%);
+  position: relative;
+}
+@media screen and (max-width: 1300px) {
+  .ChatInfo.active {
+    position: absolute;
+  }
+}
+.ChatInfo__title {
+  display: flex;
+  flex: 0 0 70px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+  color: #011627;
+  padding: 12px 16px;
+  background-color: #fff;
+  border-left: 1px solid #70799154;
+  position: relative;
+}
+.ChatInfo__close {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 20px;
+  border: 1px solid #011627;
+  background-color: transparent;
+  font-size: 20px;
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+  transition: 0.25s;
+  border-radius: 6px;
+}
+.ChatInfo__close:hover {
+  background-color: #8babd8;
+}
+.ChatInfo__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 12px 12px 0px;
+  overflow: auto;
+}
+.ChatInfo__input {
+  padding: 12px;
+  border-radius: 12px;
+  color: #011627;
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+.ChatInfo__input::placeholder {
+  color: 707991;
+}
+.ChatInfo__users {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.ChatInfo-user {
+  padding: 6px 10px;
+  font-size: 16px;
+  color: #011627;
+  border-bottom: 1px solid #70799154;
+  flex-shrink: 0;
+}
+
+.ChatInfo-user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 38px;
+}
+.ChatInfo-user__name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.ChatInfo-user__delete-btn {
+  border: 0;
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 5px;
+  align-items: center;
+  margin-left: 8px;
+  transition: 0.25s;
+  cursor: pointer;
+  color: #011627;
+}
+.ChatInfo-user__delete-btn:hover {
+  background-color: #f71735;
+  color: #fff;
+}

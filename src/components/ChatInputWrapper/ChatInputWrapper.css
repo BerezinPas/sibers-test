@@ -1,0 +1,33 @@
+.ChatInputWrapper {
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+  position: relative;
+  margin: 0 auto 20px;
+  width: 686px;
+}
+.Input {
+  flex-grow: 1;
+  padding: 18px;
+  border-radius: 12px;
+  color: #011627;
+  font-size: 16px;
+  border: none;
+}
+.Input::placeholder {
+  color: 707991;
+}
+.Input:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 1300px) {
+  .ChatInputWrapper {
+    width: 586px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .ChatInputWrapper {
+    width: auto;
+  }
+}

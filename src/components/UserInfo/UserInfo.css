@@ -1,0 +1,17 @@
+.UserInfo {
+  flex: 0 0 70px;
+  display: flex;
+  gap: 10px;
+  padding: 12px 16px;
+  align-items: center;
+}
+.UserInfo__img {
+  border-radius: 50%;
+  background-color: grey;
+  width: 45px;
+  height: 45px;
+}
+.UserInfo__name {
+  font-size: 20px;
+  color: #011627;
+}

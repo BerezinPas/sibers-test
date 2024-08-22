@@ -1,0 +1,29 @@
+.Button {
+  background-color: #03a9f1;
+  border: 0px;
+  padding: 11px 31px;
+  font-size: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #f5f5f5;
+  transition: 0.25s;
+}
+.Button:hover {
+  opacity: 0.7;
+}
+.Button:disabled {
+  background-color: #707991;
+  cursor: no-drop;
+  opacity: 1;
+}
+.Button_send {
+  position: absolute;
+  right: 16px;
+  background-color: #78e378;
+  padding: 12px 16px;
+}
+@media screen and (max-width: 370px) {
+  .Button_send {
+    display: none;
+  }
+}

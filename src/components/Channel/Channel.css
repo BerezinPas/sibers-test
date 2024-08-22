@@ -1,0 +1,17 @@
+.Channel {
+  padding: 12px 16px;
+  font-size: 16px;
+  color: #011627;
+  border-bottom: 1px solid #70799154;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  transition: 0.25s;
+}
+.Channel:first-child {
+  border-top: 1px solid #70799154;
+}
+.Channel:hover {
+  background-color: #f5f5f5;
+}

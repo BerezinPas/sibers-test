@@ -1,0 +1,47 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: grey;
+  line-height: 1.2;
+  overflow: hidden;
+}
+
+.RealTimeChat {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  height: 100vh;
+  overflow: hidden;
+}
+.RealTimeChat__left {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 375px;
+  transition: 0.25s;
+  flex-shrink: 0;
+}
+@media screen and (max-width: 900px) {
+  .RealTimeChat__left {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    transform: translateX(-100%);
+  }
+  .RealTimeChat__left.active {
+    position: relative;
+    transform: translateX(0%);
+  }
+}
+@media screen and (max-width: 500px) {
+  .RealTimeChat__left {
+    width: 250px;
+  }
+}
+.Channels {
+  overflow: auto;
+}

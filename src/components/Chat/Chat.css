@@ -1,0 +1,36 @@
+.Chat-window {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+}
+
+.Chat {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  background-color: #8babd8;
+}
+
+.Messages {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-items: flex-start;
+  gap: 10px;
+  width: 700px;
+  flex-grow: 1;
+  margin: 0 auto;
+  padding: 12px;
+  overflow-y: auto;
+}
+@media screen and (max-width: 1300px) {
+  .Messages {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .Messages {
+    width: auto;
+  }
+}

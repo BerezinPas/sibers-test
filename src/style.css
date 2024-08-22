@@ -1,0 +1,45 @@
+.chat-app {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: 0 auto;
+}
+
+.channels {
+  margin: 10px 0;
+}
+
+.channel {
+  cursor: pointer;
+  padding: 5px;
+  background-color: #f1f1f1;
+}
+
+.channel.active {
+  background-color: #d1e7dd;
+}
+
+.chat-channel {
+  border-top: 1px solid #ccc;
+  padding: 10px;
+}
+
+.messages {
+  height: 200px;
+  overflow-y: scroll;
+  border: 1px solid #ddd;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.user-list {
+  margin-bottom: 10px;
+}
+
+input {
+  width: 80%;
+}
+
+button {
+  width: 18%;
+}
