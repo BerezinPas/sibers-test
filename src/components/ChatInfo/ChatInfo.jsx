@@ -26,13 +26,13 @@ export function ChatInfo({
         >
           x
         </Button>
-        Участники
+        members
       </h3>
       <div className="ChatInfo__inner">
         <input
           ref={refInput}
           type="text"
-          placeholder="Введите имя пользователя"
+          placeholder="Enter username"
           className="ChatInfo__input"
           onInput={() => setInput(refInput.current.value)}
           value={input}
@@ -54,7 +54,7 @@ export function ChatInfo({
                         }}
                         className="ChatInfo-user__delete-btn"
                       >
-                        Удалить
+                        remove
                       </button>
                     )}
                   </li>

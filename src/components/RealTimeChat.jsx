@@ -66,7 +66,7 @@ export function RealTimeChat(props) {
     e.preventDefault();
     const name = e.target.FormCreateChatInput.value.trim();
     if (!name) {
-      setError("Название чата не должно быть пустым");
+      setError("Chat name must not be empty");
       return;
     }
 
@@ -89,7 +89,7 @@ export function RealTimeChat(props) {
 
     const index = chatsData.findIndex((chat) => chat.id === value);
     if (index === -1) {
-      setError(() => "Чата с таким id не существует!");
+      setError(() => "Chat with such ID does not exist!");
       e.target.FormCreateChatInput.value = "";
       e.target.FormCreateChatInput.focus();
       return;
@@ -131,9 +131,9 @@ export function RealTimeChat(props) {
         />
         {formChat === "create" && (
           <FormCreateChat
-            title={"Создание чата"}
-            placeholderInput={"Введите название чата"}
-            buttonText={"Создать"}
+            title={"Creating Chat"}
+            placeholderInput={"Enter chat name"}
+            buttonText={"Create"}
             onClose={() => setFormChat("")}
             onSubmit={formCreateChatHandler}
             error={error}
@@ -141,9 +141,9 @@ export function RealTimeChat(props) {
         )}
         {formChat === "add" && (
           <FormCreateChat
-            title={"Присоединится к чату"}
-            placeholderInput={"Введите Id чата"}
-            buttonText={"подключится"}
+            title={"connect to chat"}
+            placeholderInput={"Enter chat Id"}
+            buttonText={"connect"}
             onClose={() => setFormChat("")}
             onSubmit={formAddChatHandler}
             error={error}

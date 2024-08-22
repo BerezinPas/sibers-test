@@ -32,7 +32,7 @@ export function ChatInputWrapper({ onSubmit }) {
         style={{ paddingRight: rightPadding }}
       />
       <button ref={buttonRef} className="Button Button_send">
-        Отправить
+        send
       </button>
     </form>
   );

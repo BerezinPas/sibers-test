@@ -5,10 +5,10 @@ export function ChannelControl({ onCreate, onAdd, ...props }) {
   return (
     <div className="ChannelControl">
       <Button onClick={onAdd} className="Button Button_add">
-        Присоединится
+        connect
       </Button>
       <Button onClick={onCreate} className="Button Button_create">
-        Создать чат
+        Create a chat
       </Button>
     </div>
   );
